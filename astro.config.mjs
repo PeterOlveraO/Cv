@@ -1,9 +1,8 @@
-// @ts-check
+// astro.config.mjs
 import { defineConfig } from 'astro/config';
 
-// https://astro.build/config
 export default defineConfig({
-    site: 'https://peterolverao.github.io',
-    base: '/Cv', // <--- Importante
+    site: 'https://pedro-olvera.me',
+    // La línea 'base' debe desaparecer de aquí
     output: 'static'
 });
