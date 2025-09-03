@@ -18,19 +18,5 @@ const { title } = Astro.props;
     <div class="cv-container">
       <slot />
     </div>
-    
-    <button class="print-button" onclick="window.print()">Imprimir CV</button>
-    
-    <script>
-      // Script para el botón de impresión
-      document.addEventListener('DOMContentLoaded', () => {
-        const printButton = document.querySelector('.print-button');
-        if (printButton) {
-          printButton.addEventListener('click', () => {
-            window.print();
-          });
-        }
-      });
-    </script>
   </body>
 </html>
