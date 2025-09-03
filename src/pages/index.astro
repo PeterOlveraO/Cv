@@ -1,16 +1,25 @@
 ---
+// Importamos el layout
+import CVLayout from '../layouts/CVLayout.astro';
 
+// Importamos los componentes
+import Header from '../components/Header.astro';
+import Educacion from '../components/Educacion.astro';
+import Experiencia from '../components/Experiencia.astro';
+import Habilidades from '../components/Habilidades.astro';
+
+// Importamos los datos
+import { 
+  personalData, 
+  formacionAcademica, 
+  experienciaProfesional, 
+  habilidades
+} from '../data/cvData.js';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<CVLayout title={`${personalData.nombre} - Curriculum Vitae`}>
+  <Header data={personalData} />
+  <Educacion data={formacionAcademica} />
+  <Experiencia data={experienciaProfesional} />
+  <Habilidades data={habilidades} />
+</CVLayout>

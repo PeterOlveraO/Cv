@@ -1,0 +1,22 @@
+---
+const { data } = Astro.props;
+---
+
+<section id="experiencia">
+  <h2>Experiencia Profesional</h2>
+  {data.map((item) => (
+    <div class="experience-item">
+      <h3>{item.puesto}</h3>
+      <div>
+        <span class="company">{item.empresa}</span>,
+        <span class="location"> {item.ubicacion}</span>
+      </div>
+      <div class="period">{item.periodo}</div>
+      <ul>
+        {item.responsabilidades.map((resp) => (
+          <li>{resp}</li>
+        ))}
+      </ul>
+    </div>
+  ))}
+</section>

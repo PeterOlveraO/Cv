@@ -1,0 +1,36 @@
+---
+const { data } = Astro.props;
+---
+
+<section id="habilidades">
+  <h2>Habilidades</h2>
+  <div class="skills-container">
+    <div class="skills-group">
+      <h3>Técnicas</h3>
+      <div class="skills-list">
+        {data.tecnicas.map((skill) => (
+          <span class="skill-tag">{skill}</span>
+        ))}
+      </div>
+    </div>
+    
+    <div class="skills-group">
+      <h3>Idiomas</h3>
+      {data.idiomas.map((idioma) => (
+        <div class="language">
+          <span>{idioma.idioma}:</span>
+          <span>{idioma.nivel}</span>
+        </div>
+      ))}
+    </div>
+    
+    <div class="skills-group">
+      <h3>Competencias</h3>
+      <div class="skills-list">
+        {data.blandas.map((skill) => (
+          <span class="skill-tag">{skill}</span>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
