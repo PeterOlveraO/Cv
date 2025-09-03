@@ -3,6 +3,6 @@ import { defineConfig } from 'astro/config';
 
 export default defineConfig({
     site: 'https://pedro-olvera.me',
-    // La línea 'base' debe desaparecer de aquí
+    // No es necesario el base para un dominio personalizado
     output: 'static'
 });

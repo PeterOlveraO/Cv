@@ -2,7 +2,7 @@
 export const personalData = {
   nombre: "Pedro Alberto Olvera Ochoa",
   titulo: "Ingeniero en sistemas computacionales",
-  fotoPerfil: "/Cv/imagenes/foto-perfil.webp", // Ruta a tu foto de perfil en formato WebP
+  fotoPerfil: "/imagenes/foto-perfil.webp", // Ruta a tu foto de perfil en formato WebP
   descripcionPersonal: "Futuro profesional de DevOps con enfoque en la integración de la estabilidad y la innovación. Mi objetivo es construir sistemas robustos que permitan a los equipos de desarrollo innovar de manera ágil y segura, asegurando un crecimiento continuo.",
   contacto: {
     email: "pedro.olvera.8a@gmail.com",
